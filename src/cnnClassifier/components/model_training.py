@@ -2,8 +2,8 @@ import os
 import urllib.request as request
 from zipfile import ZipFile
 from pathlib import Path
-from src.cnnClassifier import logger
-from src.cnnClassifier.entity.config_entity import TrainingConfig
+from cnnClassifier import logger
+from cnnClassifier.entity.config_entity import TrainingConfig
 import tensorflow as tf
 
 

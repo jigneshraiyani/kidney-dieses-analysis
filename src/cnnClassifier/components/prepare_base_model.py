@@ -2,9 +2,9 @@ import os
 import urllib.request as request
 from zipfile import ZipFile
 from pathlib import Path
-from src.cnnClassifier import logger
+from cnnClassifier import logger
 import tensorflow as tf
-from src.cnnClassifier.entity.config_entity import (DataIngestionConfig, PrepareBaseModelConfig)
+from cnnClassifier.entity.config_entity import (DataIngestionConfig, PrepareBaseModelConfig)
 
 
 class PrepareBaseModel:
