@@ -71,6 +71,7 @@ class ConfigurationManager:
     def get_evaluation_config(self) -> EvaluatingConfig:
         evaluation_config  = self.config.evaluation
         eval_config = EvaluatingConfig(
+            root_dir=evaluation_config.root_dir,
             path_of_model= evaluation_config.path_of_model,
             training_data= evaluation_config.training_data,
             mlflow_uri= evaluation_config.mlflow_uri,
