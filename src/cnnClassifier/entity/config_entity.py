@@ -34,6 +34,7 @@ class TrainingConfig:
 
 @dataclass(frozen=True)
 class EvaluatingConfig:
+    root_dir: Path
     path_of_model: Path
     training_data: Path
     all_params: dict
