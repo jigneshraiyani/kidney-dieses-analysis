@@ -51,6 +51,7 @@ class Evaluation:
         scores = {"loss": self.score[0], "accuracy": self.score[1]}
         logger.info(f" model loss is {self.score[0]} and accuracy is {self.score[1]}")
         #save_json(path=Path("scores.json"), data=scores)
+        # self.log_into_mlflow()
 
 
     def log_into_mlflow(self):
