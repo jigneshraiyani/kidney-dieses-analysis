@@ -2,6 +2,8 @@ import tensorflow as tf
 import pathlib as Path
 import mlflow
 import mlflow.keras
+import shutil
+import os
 from urllib.parse import urlparse
 from cnnClassifier.entity.config_entity import EvaluatingConfig
 from cnnClassifier.utils.util import read_yaml, create_directories
@@ -46,6 +48,11 @@ class Evaluation:
         self._valid_generator()
         self.score = self.model.evaluate(self.valid_generator)
         self.save_score()
+        self.copyModel()
+
+    def copyModel(self):
+        os.makedirs(self.config.root_dir, exist_ok=True)
+        shutil.copy2(self.config.path_of_model, self.config.root_dir)
 
     def save_score(self):
         scores = {"loss": self.score[0], "accuracy": self.score[1]}

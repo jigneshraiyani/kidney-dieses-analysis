@@ -1,5 +1,5 @@
-# Kidney-Disease-Classification
-Kidney-Disease-Classification using Deep Learning
+# Chronic Analysis
+Chronic Analysis using Deep Learning
 
 
 ## Workflows
@@ -22,7 +22,8 @@ Kidney-Disease-Classification using Deep Learning
 Clone the repository
 
 ```bash
-https://github.com/jigneshraiyani/Kidney-Disease-Classification
+https://github.com/jigneshraiyani/Chronic-Analysis
+
 ```
 ### STEP 01- Create a conda environment after opening the repository
 
