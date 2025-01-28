@@ -1,5 +1,5 @@
-# Chronic Analysis
-Chronic Analysis using Deep Learning
+# Kidney Dieses Analysis
+Kidney Dieses Analysis using Deep Learning
 
 
 ## Workflows
